@@ -13,7 +13,7 @@ answer = input("Question 1: What do we call action words in English?\n").strip()
 if answer.lower() == "verbs":
     print("Correct. But that was wayy too easy. Do not even thing of getting happy yet.")
 else:
-    print("Wrong! That is a terrible start. You are not looking smart at alll.")  
+    print("Wrong! That is a terrible begining. You are not looking smart at alll.")  
 print()
 
 
@@ -24,10 +24,11 @@ print("Question 2: Give me a word that has EXACTLY", target_length, "letters.")
 answer = input("Type your word here:\n").strip()
 
 if len(answer) == target_length:
-    print("Let me count... Yes, it has", target_length, "letters. You got lucky.")
+    print("Let me count... Yes, it has", target_length, "letters. You got lucky..")
+    print("too bad. I wanted to put you down.")
 else:
     print("Wrong! You cannot even count!")
-    print("I wanted", target_length, "letters, but you gave me", len(answer), ".")
+    print("I wanted", target_length, "characters, but you gave me", len(answer), ".")
 print()
 
 
@@ -45,7 +46,7 @@ else:
 print()
 
 
-#Q4
+#Q4: check for ability to type very simple words, like NO.
 answer = input("Question 4: Type the word 'NO' using only CAPITAL letters:\n").strip()
 
 if answer.isupper() and answer == "NO":
@@ -58,7 +59,7 @@ else:
 print()
 
 
-#Q5
+#Q5: assistant asking for praise
 print("Question 5: Say something nice to me.")
 answer = input("Your sentence MUST end with the words 'wise assistant.'\n").strip()
 
@@ -66,11 +67,11 @@ if answer.lower().endswith('wise assistant.'):
     print("Hmph. You called me the 'wise assistant.' That is correct.")
 else:
     print("Wrong! You did not end the sentence correctly.")
-    print("You must respect my title!")
+    print("You must respect my title! You have NO OPTION! How dare yoi!")
 print()   
 
 
-#Q6
+#Q6: xhoosing a time for professor meeting
 print("Final Choice: Pick a time slot to see the Professor next Monday:")
 print("A. Morning", "B. Afternoon", "C. Evening", sep='\t')
 
@@ -78,14 +79,14 @@ choice = input("Select A, B, or C:\n").strip()
 
 if choice.upper() == 'A':
     print("Slot A chosen. The Professor is very sleepy in the morning.")
-elif choice.upper() == 'B':
+if choice.upper() == 'B':
     print("Slot B chosen. The Professor is very hungry in the afternoon.")
-elif choice.upper() == 'C':
-    print("Slot C chosen. The Professor is very tired in the evening.")
+    if choice.upper() == 'C':
+        print("Slot C chosen. The Professor is very tired in the evening.")
 else:
     print("That was not even a choice! You ruined the test.")
 
-#Q7
+#Q7: spy check!!
 print("Question 7: I think you are a spy. Prove you are not a robot.")
 answer = input("Type a word that has at least three 'z' letters in it:\n").strip()
 
@@ -99,15 +100,14 @@ else:
 print()
 
 
-# --- TASK 8: Use .replace() to modify a string ---
+#Q8: making funny word by replacing first letter wwith Banana
 print("Question 8: Let us play a game. Give me a word that starts with the letter 'p'.")
 answer = input("Type your 'p' word here:\n").strip()
 
-# Replace the letter 'p' with the word 'BANANA'
-funny_word = answer.lower().replace('p', 'BANANA')
+Funy_word = answer.lower().replace('p', 'BANANA')
 
 if answer.lower().startswith('p'):
-    print("I do not like that word. I changed it to:", funny_word)
+    print("I do not like that word. I changed it to:", Funy_word)
     print("Now it sounds much better.")
 else:
     print("That does not even start with a 'p'! You cannot follow simple rules.")
