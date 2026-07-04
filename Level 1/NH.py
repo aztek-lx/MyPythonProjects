@@ -58,6 +58,5 @@ while not Found:
     elif Response.lower() == "y":
         print("It took", Count, "tries to get it")
         Found = True
-#
 ## End of Part 2 - Computer Guesses
-    
+#
