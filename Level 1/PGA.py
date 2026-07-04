@@ -68,6 +68,7 @@ if answer.lower().endswith('wise assistant.'):
 else:
     print("Wrong! You did not end the sentence correctly.")
     print("You must respect my title! You have NO OPTION! How dare yoi!")
+    print("If you forgot the fullstop, you probably failed kindergarden!")
 print()   
 
 
@@ -90,13 +91,13 @@ else:
 print("Question 7: I think you are a spy. Prove you are not a robot.")
 answer = input("Type a word that has at least three 'z' letters in it:\n").strip()
 
-z_count = answer.lower().count('z')
+zCount = answer.lower().count('z')
 
 if z_count >= 3:
-    print("Fine. You usd", z_count, "z's. Only a weird human or a broken robot would type that.")
+    print("Fine. You usd", zCount, "z's. Only a weird human or a broken robot would type that.")
 else:
-    print("I caught you! Your word only had", z_count, "z's. You are a terrible spy.")
-    print("Your master must be dissapointed in your existance")
+    print("I caught you! Your word only had", zCount, "z's. You are a terrible spy.")
+    print("Your boss must be dissapointed in your existance")
 print()
 
 
