@@ -33,11 +33,11 @@ def draw_speaker(x_pos, y_pos):
     t.forward(110)
     t.left(90)
     t.end_fill()
-
     #speaker circle inside
     t.penup()
     t.goto(x_pos + 20, y_pos + 60)
     t.pendown()
+
     t.color("black", "yellow")
     t.begin_fill()
     t.circle(12)
@@ -53,6 +53,7 @@ t.color("#693303")
 #cabinet frams
 t.forward(360)
 t.right(90)
+
 t.forward(150)
 t.right(90)
 t.forward(360)
@@ -67,8 +68,8 @@ t.pendown()
 t.forward(360)
 
 t.pensize(2)
-
 #speaker box
+
 t.penup()
 t.goto(-140, -75)
 t.pendown()
@@ -118,6 +119,7 @@ t.end_fill()
 #power lights
 t.penup()
 t.goto(60, -35)
+
 t.pendown()
 t.color("black", "cyan")
 t.begin_fill()
@@ -132,6 +134,7 @@ t.end_fill()
 
 #controllers
 t.penup()
+
 t.goto(-40, -130)
 t.pendown()
 t.color("black", "red")
@@ -149,6 +152,7 @@ t.end_fill()
 
 #tv frame
 t.penup()
+
 t.goto(-120, 30)
 t.pendown()
 t.color("black", "black")
@@ -173,6 +177,7 @@ t.forward(110)
 t.right(90)
 t.forward(220)
 t.right(90)
+
 t.forward(110)
 t.left(90)
 t.end_fill()
@@ -185,6 +190,8 @@ t.color("black", "black")
 t.begin_fill()
 t.left(90)
 t.forward(30)
+
+
 t.right(90)
 t.forward(40)
 t.right(90)
@@ -193,7 +200,7 @@ t.left(90)
 t.end_fill()
 
 #calling speaker drawing function.
-draw_speaker(-170, 0)  # Left Speaker
-draw_speaker(130, 0)   # Right Speaker
+draw_speaker(-170, 0) 
 
+draw_speaker(130, 0) 
 turtle.mainloop()
