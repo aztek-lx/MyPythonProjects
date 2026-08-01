@@ -58,9 +58,9 @@ scenery = [
     [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],
     [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],
     [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
-]
 
-# Adding a cactus into the grid using codes 6 (dark green) and 7 (green)
+
+#Adding a cactus. codes 6 =dark green and 7=green
 scenery[37][8] = 6; scenery[38][8] = 6; scenery[39][8] = 6; scenery[40][8] = 6; scenery[41][8] = 6; scenery[42][8] = 6; scenery[43][8] = 6; scenery[44][8] = 6
 scenery[38][6] = 7; scenery[39][6] = 7; scenery[39][7] = 7; scenery[40][8] = 7
 scenery[40][10] = 7; scenery[40][9] = 7; scenery[39][10] = 7
