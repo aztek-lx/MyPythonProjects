@@ -1,5 +1,5 @@
 import random
-
+#----------------
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 vigenere_key = []
 
@@ -21,14 +21,19 @@ def split_swap(text):
     part2 = text[mid:]
     return part2 + part1
 
+
+
 def invert(text):
+
     return text[::-1]
 
 def split_swap_invert(text):
     return invert(split_swap(text))
 
+
 def invert_split_swap(text):
     return split_swap(invert(text))
+
 
 def invert_words(text):
     chunks = text.split(' ')
@@ -48,6 +53,7 @@ def shift_cipher(text, shift_val):
             out += alphabet[new_pos]
     return out
 
+###
 def mirror_cipher(text):
     out = ''
     for char in text:
@@ -109,7 +115,7 @@ if decider == 0:
     encoded_msg = shift_cipher(full_msg, random.randint(1, 25))
 else:
     encoded_msg = poly_cipher(full_msg, vigenere_key)
-
+#
 choice = 0
 choice = random.randint(0, 4)
 if choice == 0:
@@ -130,6 +136,7 @@ print()
 
 found = False
 
+
 possible_msgs = [
     encrypted_target,
     alt_swap(encrypted_target),
@@ -139,6 +146,7 @@ possible_msgs = [
 ]
 
 msg_length = len(base_msg)
+##
 
 for possible_msg in possible_msgs:
     for shift_num in range(1, 26):
@@ -161,3 +169,4 @@ if not found:
             print(decoded[:msg_length])
             found = True
             break
+
