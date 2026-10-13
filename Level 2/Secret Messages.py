@@ -4,7 +4,7 @@ alphabet = 'abcdefghijklmnopqrstuvwxyz'
 vigenere_key = []
 
 def alt_swap(text):
-    if len(text) % 2 != 0:
+    if len(text) % 2 <> 0:
         text += ' '
     evens = text[0::2]
     odds = text[1::2]
